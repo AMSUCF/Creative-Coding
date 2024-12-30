@@ -73,29 +73,37 @@ All readings should be completed before the class meeting as listed. Every class
 **Week One: Writing as Code - Introducing "Natural Language" - January 7th and 9th** 
 
  - Tuesday: Class Overview
- - Thursday: Inform 7 Demo
+   - Play Together: [9:05, Adam Cadre](https://adamcadre.ac/if/905.html)
+ - Thursday: [Inform 7 Demo](inform_one.md)
+   - Play Together: [Shade, Andrew Plotkin](https://www.eblong.com/zarf/zweb/shade/)
    - Read: *Code to Joy* - Telling Computers What to Do
 
 **Week Two:  Writing as Code - Conversations - January 14th and 16th** 
 
- - Tuesday: **Escape Rooms Due**
+ - Tuesday: **[Imagined Rooms Due](code_one.md)**
+   - Play Together: [Glass, Emily Short](https://iplayif.com/?story=https%3A%2F%2Fifarchive.org%2Fif-archive%2Fgames%2Fzcode%2FGlass.zblorb)
    - Read: *Code to Joy* - The What of Programming
  - Thursday: Building Dialogues
+   - Code Reading: Adventure in [Fortran](https://github.com/wh0am1-dev/adventure) and [Inform 7](https://ifarchive.org/if-archive/games/source/inform/Advent_Crowther_source.txt)
    - Read: *Output* - Conversations: Zork, Galatea, Adventure
 
 **Week Three: Writing as Code - Interactive Fiction - January 21st and 23rd**
 
  - Tuesday: **Conversation Simulators Due**
+   - Play Together: [ELIZA](https://www.masswerk.at/eliza/)
    - Read: *Code to Joy* - Sequencing Commands
  - Thursday: Designing for Interaction
-   - Read: *Output* - Conversations: ELIZA, SHRDLU, PARRY, ALICE
+   - Code Reading: [Eliza in JavaScript](https://github.com/oren/eliza-bot)
+   - Read: *Output* - Conversations: ELIZA, SHRDLU, PARRY, ALICE, Cleverbot, Tay, Sandy Speaks, Subreddit Simulator
 
 **Week Four: Writing as Code - Histories - January 28th and 30th**
 
  - Tuesday: **Interactive Fiction Due**
+   - Play Together: [Taroko Gorge Remixes](https://collection.eliterature.org/3/collection-taroko.html)
    - Read: *Code to Joy* - Splitting on Conditionals
  - Thursday: JavaScript Poetics
-   - Read: *Output* - Poetry: Taroko Gorge and five others (your choice)
+   - Code Reading: 
+   - Read: *Output* - Poetry: Taroko Gorge, House of Trust, and five others (your choice)
 
 **Week Five: Writing as Code - Bots - February 4th and 6th**
 

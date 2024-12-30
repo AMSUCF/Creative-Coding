@@ -1,0 +1,5 @@
+## Creative Code Exercise One: Imagined Rooms
+
+This week, you'll be building a detailed environment for a player to explore using Inform 7's natural language syntax. This is an exercise that melds "code" and "text" in the act of creative writing, so please feel free to use any type of environment you want for your concept - this can be a room you've imagined, or a room you've visited, or a room that exists in a media franchise of which you are a fan. For this exercise, feel free to work from the [first demo](inform_one.md) code directly and rewrite names and descriptions to fit your vision.
+
+Your finished room should be about 500 words, including both "code" and "text." Copy your finished room to a plain text file (.txt) and upload it to the Moodle assignment before class, and we'll take a look at everyone's creations when we meet on Tuesday!
