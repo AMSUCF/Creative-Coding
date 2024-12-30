@@ -19,7 +19,8 @@ This week, we're going to cover the basics of rooms and objects. Pay attention t
 
 Here's our sample starter code demonstrating these elements:
 
-```Classroom Demo by Anastasia Salter
+~~~
+Classroom Demo by Anastasia Salter
 
 When play begins: say "This is your first day in this classroom, "
 
@@ -43,7 +44,8 @@ The closet is east of the Classroom. The description is "Yikes, everything in he
 
 The shelf is a supporter in the closet. The shelf is scenery. It is fixed in place. The description of the shelf is "This shelf doesn't have anything you want right now." Understand "shelves" as the shelf.
 
-The cleaning supplies are scenery on the shelf. The description is "Lots of eco-friendly, low plastic cleaning supplies." Instead of taking the cleaning supplies: say "You don't have anywhere to carry that." ```
+The cleaning supplies are scenery on the shelf. The description is "Lots of eco-friendly, low plastic cleaning supplies." Instead of taking the cleaning supplies: say "You don't have anywhere to carry that." 
+~~~
 
 ## Paired Exercise
 
