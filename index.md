@@ -59,7 +59,7 @@ A subscription to an AI tool (such as Claude or ChatGPT) is recommended but not 
 | 15 | **Interactive Fiction** - As the final creative exercise of "Writing as Code," students will design a simple short experience using Inform 7. |
 | 15 | **Text Generator** - As the final creative exercise of "Code as Text," students will build a web-based text generator using JavaScript. |
 | 15 | **Portfolio** - As the final creative exercise of "Creative Coding," students will develop a portfolio of interactive experiments. |
-| 15 | **Final Essay** - The final exam will consist of an in-class essay connecting the conceptual readings to the semester's exercises towards considering the future of creative code. |
+| 15 | **Final Essay** - The final exam will consist of a take-home essay connecting the conceptual readings to the semester's exercises towards considering the future of creative code. |
 | 10 | **Participation** - Participation will be assessed based on attendance and readiness to participate in class activities, including having creative work ready to share at Tuesday meetings as indicated. |
 
 Grades are calculated out of 100 following a standard letter scale. Extended projects will be accepted up to three days late with no penalty. Attendance is expected, and worth ten points of the final grade, with two excused absences except in cases of emergency or medical need. However, if you miss a class, a summary of what you missed will be posted along with slides and any other materials in the Moodle.
