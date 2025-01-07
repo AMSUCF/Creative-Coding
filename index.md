@@ -147,4 +147,4 @@ All readings should be completed before the class meeting as listed. Every class
  - Tuesday: **Portfolio Due**
    - Read: *Artificial Intelligence* - Part V: The Barrier of Meaning
 
-**Exam Day: Final Essay - Sunday, March 16th, 7:00 PM - 9:30 PM**
+**Take-Home Final Exam: Reflective Writing - Due Monday, March 17th**
