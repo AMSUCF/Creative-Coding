@@ -86,15 +86,17 @@ All readings should be completed before the class meeting as listed. Every class
    - Demo: [Topic-driven Chat](inform_two.md)
  - Thursday: Building Dialogues
    - Code Reading: Adventure in [Fortran](https://github.com/wh0am1-dev/adventure) and [Inform 7](https://ifarchive.org/if-archive/games/source/inform/Advent_Crowther_source.txt)
+   - Demo: Parsing Dialogue
    - Read: *Output* - Conversations: Zork, Galatea, Adventure
 
 **Week Three: Writing as Code - Interactive Fiction - January 21st and 23rd**
 
  - Tuesday: **Conversation Simulators Due**
-   - Play Together: [ELIZA](https://www.masswerk.at/eliza/)
+   - Play Together / Code reading: [ELIZA in JavaScript](https://github.com/oren/eliza-bot)
    - Read: *Code to Joy* - Sequencing Commands
+   - Demo: Rescripting ELIZA
  - Thursday: Designing for Interaction
-   - Code Reading: [Eliza in JavaScript](https://github.com/oren/eliza-bot)
+   - Demo: Scenes and Encounters
    - Read: *Output* - Conversations: ELIZA, SHRDLU, PARRY, ALICE, Cleverbot, Tay, Sandy Speaks, Subreddit Simulator
 
 **Week Four: Writing as Code - Histories - January 28th and 30th**
