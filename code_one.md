@@ -4,4 +4,4 @@ This week, you'll be building a detailed environment for a player to explore usi
 
 Don't worry if something you've described isn't working quite as you imagined it: we'll discuss debugging when we meet. Test as you go using the built-in parser interface we previewed in class. Try incorporating elements of the three challenges from class into your design.
 
-Your finished room should be about 500 words, including both "code" and "text." Copy your finished room to a plain text file (.txt) and upload it to the Moodle assignment before class, and we'll take a look at everyone's creations when we meet on Tuesday!
+Your finished room should be about 500 words, including both "code" and "text." Feel free to go beyond those requirements or to experiment with more complex possibilities. Copy your finished room to a plain text file (.txt) and upload it to the Moodle assignment before class, and we'll take a look at everyone's creations when we meet on Tuesday!
