@@ -1,0 +1,100 @@
+"Classroom Demo" by Anastasia Salter
+
+Release along with an interpreter, a website, and the source text.
+ 
+When play begins: say "This is your first day in this classroom, "
+
+The Classroom is a room. "The classroom is filled with computers in rows. The exit to the hallway is locked tight for now. East is a closet, and there's a locked cabinet on one side of the room."
+
+The chair is an enterable supporter in the Classroom. The description is "It's one of those modern chairs with no padding and a weird back."
+
+The desk is a supporter in the Classroom. It is fixed in place. The description of the desk is "It's weirdly clean, like no one has been here in a long time. It has an upper and lower drawer." Understand "table" as the desk.
+
+The upper drawer and the lower drawer are parts of the desk. The upper drawer and lower drawer are openable closed containers. In the upper drawer is a peppermint. The peppermint is edible.
+
+The book is on the desk. The description of the book is "It's a book, called Output. Weird." The book is an openable closed container. 
+
+[Challenge one - small key is hidden in book, unlocks the cabinet]
+
+The small key is in the book.
+The small key is undescribed.
+
+After opening the book for the first time:
+	now the small key is described;
+	say "As you open the book, a small key slides out from between the pages!";
+	now the player is holding the small key.
+	
+The cabinet is a locked openable container in the Classroom. It is fixed in place. The description of the cabinet is "This cabinet is probably filled with even more cool technology. Unfortunately, it's locked."
+
+Instead of opening the cabinet when the cabinet is locked, say "It's locked, and you don't have the key."
+
+Instead of unlocking the cabinet with the small key:
+	now the cabinet is unlocked;
+	say "You insert the key into the lock. With a satisfying click, the cabinet unlocks!";
+
+[Challenge two - adds a keycard in the cabinet, which unlocks the hallway door and provides an ending.]
+The keycard is in the cabinet.
+The keycard is undescribed.
+The description of the keycard is "A high-tech access card labeled 'Professor's Keycard.'"
+
+Instead of opening the cabinet when the cabinet is unlocked:
+	now the keycard is described;
+	say "Inside the cabinet, you find a sleek, high-tech card. It must be the professor's keycard!";
+	now the player is holding the keycard.
+	
+The Hallway is a room.
+
+The exit is a locked door. The exit is north of the Classroom and south of the Hallway. The description of the exit is "A reinforced door with a card scanner. It appears to require an access card."
+
+Instead of opening the exit when the exit is locked:
+	say "The door won't budge without an access card."
+
+Instead of unlocking the exit with the keycard:
+	now the exit is unlocked;
+	say "You swipe the professor's keycard through the scanner. The door unlocks with a soft beep.";
+	
+After opening the exit:
+	say "You step through the door and out of the classroom. Congratulations, you've escaped!";
+	end the story finally saying "You successfully made it out of the classroom.";
+	
+[Challenge three - the cleaning cabinet is now not what it seemed.]
+The closet is east of the Classroom. The description of the closet is "[closet-description]."
+
+A supporter called the shelf is in the closet. The shelf is scenery. It is fixed in place.
+The description of the shelf is "[shelf-description]."
+Understand "shelves" as the shelf.
+
+The cleaning supplies are scenery on the shelf. The description of the cleaning supplies is "[supplies-description]."
+Instead of taking the cleaning supplies:
+	say "You don't have anywhere to carry that."
+
+A number called the closet visit count is initially 0.
+
+To say closet-description:
+	if the closet visit count is 0:
+		say "Yikes, everything in here is cleaning supplies. Shelves and shelves of them.";
+	otherwise if the closet visit count is 1:
+		say "The cleaning supplies are still here, but the air feels... different.";
+	otherwise if the closet visit count is 2:
+		say "Something seems to be shimmering faintly behind the shelf.";
+	otherwise if the closet visit count is 3:
+		say "The shelves and cleaning supplies have vanished. Before you is a shimmering portal.";
+
+To say shelf-description:
+	if the closet visit count < 3:
+		say "This shelf doesn't have anything you want right now.";
+	otherwise:
+		say "The shelf is no longer here—just the portal.";
+
+To say supplies-description:
+	if the closet visit count < 3:
+		say "Lots of eco-friendly, low-plastic cleaning supplies.";
+	otherwise:
+		say "The cleaning supplies have disappeared along with the shelves.";
+
+After looking in the closet:
+	increment the closet visit count;
+	if the closet visit count is 4:
+		say "A portal materializes before you. Could this be... Narnia?";
+		
+[this will require expansion to add the portal and consequences]
