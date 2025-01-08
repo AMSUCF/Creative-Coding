@@ -55,4 +55,12 @@ Press "Go" to play your game in progress, and try exploring the space as you cre
 
 ![Inform 7 demo](inform.png)
 
-At the end of today's class, we'll share our versions of the classroom briefly: think about how your impressions of objects and their relationships differed from the interpretations of others. This speaks to the complexity of representing the physical world, which will be important later when we discuss AI.
+Next, work through the three challenges in pairs to extend the interaction with the environment - use any resources you want, including generative AI coding tools:
+
+- Challenge One: Add a simple set of conditions to escape the classroom. The easiest way to do this is by using the locked door model - consider starting there by adding items that can be used to unlock it and change the state of the game.
+
+- Challenge Two: Inspired by *9:05*, build a more complex ending condition for the game. Consider making multiple objects required to advance, and provide a narrative motivation and sense of closure.
+
+- Challenge Three: Inspired by *Shade*, add a twist to the game that significantly changes the player's relationship with the environment. You might accomplish this by adding a timer that progresses the state of play, or by layering objects that aren't quite what they appear to be on first interaction. For this challenge, using generative AI to assist with your code is highly recommended.
+
+At the end of today's class, we'll share our versions of the classroom briefly: think about how your impressions of objects and their relationships differed from the interpretations of others, and the different ways you approached adding interactivity. This speaks to the complexity of representing the physical world, which will be important next week as we start to add in more generative AI coding.
