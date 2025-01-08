@@ -83,6 +83,7 @@ All readings should be completed before the class meeting as listed. Every class
  - Tuesday: **[Imagined Rooms Due](code_one.md)**
    - Play Together: [Glass, Emily Short](https://iplayif.com/?story=https%3A%2F%2Fifarchive.org%2Fif-archive%2Fgames%2Fzcode%2FGlass.zblorb)
    - Read: *Code to Joy* - The What of Programming
+   - Demo: [Topic-driven Chat](inform_two.md)
  - Thursday: Building Dialogues
    - Code Reading: Adventure in [Fortran](https://github.com/wh0am1-dev/adventure) and [Inform 7](https://ifarchive.org/if-archive/games/source/inform/Advent_Crowther_source.txt)
    - Read: *Output* - Conversations: Zork, Galatea, Adventure
