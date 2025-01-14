@@ -92,7 +92,7 @@ All readings should be completed before the class meeting as listed. Every class
 
 **Week Three: Writing as Code - Interactive Fiction - January 21st and 23rd**
 
- - Tuesday: **Conversation Simulators Due**
+ - Tuesday: **[Conversation Simulators Due](code_two.md)**
    - Play Together / Code reading: [ELIZA in JavaScript](https://github.com/oren/eliza-bot)
    - Read: *Code to Joy* - Sequencing Commands
    - Demo: Rescripting ELIZA
