@@ -102,7 +102,7 @@ All readings should be completed before the class meeting as listed. Every class
 
 **Week Four: Writing as Code - Histories - January 28th and 30th**
 
- - Tuesday: **Interactive Fiction Due**
+ - Tuesday: **[Interactive Fiction Due](interactive_fiction.md)**
    - Play Together: [Taroko Gorge Remixes](https://collection.eliterature.org/3/collection-taroko.html)
    - Read: *Code to Joy* - Splitting on Conditionals
  - Thursday: JavaScript Poetics
