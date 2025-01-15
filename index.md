@@ -97,6 +97,7 @@ All readings should be completed before the class meeting as listed. Every class
    - Read: *Code to Joy* - Sequencing Commands
    - Demo: Rescripting ELIZA
  - Thursday: Designing for Interaction
+   - Code reading: [Infocom](https://github.com/historicalsource/)
    - Demo: Scenes and Encounters
    - Read: *Output* - Conversations: ELIZA, SHRDLU, PARRY, ALICE, Cleverbot, Tay, Sandy Speaks, Subreddit Simulator
 
@@ -106,12 +107,11 @@ All readings should be completed before the class meeting as listed. Every class
    - Play Together: [Taroko Gorge Remixes](https://collection.eliterature.org/3/collection-taroko.html)
    - Read: *Code to Joy* - Splitting on Conditionals
  - Thursday: JavaScript Poetics
-   - Code Reading: 
    - Read: *Output* - Poetry: Taroko Gorge, House of Trust, and five others (your choice)
 
 **Week Five: Writing as Code - Bots - February 4th and 6th**
 
- - Tuesday: **Taroko Gorge Remix Due**
+ - Tuesday: **Taroko Gorge Re-Remix Due**
    - Read: *Code to Joy* - Defining Functions
  - Thursday: Tracery Grammars
    - Read: *Output* - Tweets and Microblogging (all)
