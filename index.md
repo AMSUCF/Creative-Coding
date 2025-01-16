@@ -86,7 +86,7 @@ All readings should be completed before the class meeting as listed. Every class
    - Read: *Code to Joy* - The What of Programming
    - Demo: [Topic-driven Chat](inform_two.md)
  - Thursday: Building Dialogues
-   - Code Reading: Adventure in [Fortran](https://github.com/wh0am1-dev/adventure) and [Inform 7](https://ifarchive.org/if-archive/games/source/inform/Advent_Crowther_source.txt)
+   - Play Together / Code Reading: [Adventure](https://rickadams.org/adventure/advent/) in [Fortran](https://github.com/wh0am1-dev/adventure) and [Inform 7](https://ifarchive.org/if-archive/games/source/inform/Advent_Crowther_source.txt)
    - Demo: [Parsing Dialogue](inform_three.md)
    - Read: *Output* - Conversations: Zork, Galatea, Adventure
 
