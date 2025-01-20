@@ -105,14 +105,16 @@ All readings should be completed before the class meeting as listed. Every class
 **Week Four: Writing as Code - Histories - January 28th and 30th**
 
  - Tuesday: **[Interactive Fiction Due](interactive_fiction.md)**
+   - Demo: [Distant Read](distant_read.md)
    - Play Together: [Taroko Gorge Remixes](https://collection.eliterature.org/3/collection-taroko.html)
    - Read: *Code to Joy* - Splitting on Conditionals
  - Thursday: JavaScript Poetics
+   - Demo: [Combining Texts](combine_texts.md)
    - Read: *Output* - Poetry: Taroko Gorge, House of Trust, and five others (your choice)
 
 **Week Five: Writing as Code - Bots - February 4th and 6th**
 
- - Tuesday: **Taroko Gorge Re-Remix Due**
+ - Tuesday: **[Taroko Gorge Re-Remix Due](code_three.md)**
    - Read: *Code to Joy* - Defining Functions
  - Thursday: Tracery Grammars
    - Read: *Output* - Tweets and Microblogging (all)
