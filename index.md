@@ -93,12 +93,13 @@ All readings should be completed before the class meeting as listed. Every class
 **Week Three: Writing as Code - Interactive Fiction - January 21st and 23rd**
 
  - Tuesday: **[Conversation Simulators Due](code_two.md)**
+   - Review: [Challenge Solutions](./inform_two/)
    - Play Together / Code reading: [ELIZA in JavaScript](https://github.com/oren/eliza-bot)
    - Read: *Code to Joy* - Sequencing Commands
    - Demo: Rescripting ELIZA
  - Thursday: Designing for Interaction
    - Code reading: [Infocom](https://github.com/historicalsource/)
-   - Demo: Scenes and Encounters
+   - Demo: [Iterating and Combining](inform_four.md)
    - Read: *Output* - Conversations: ELIZA, SHRDLU, PARRY, ALICE, Cleverbot, Tay, Sandy Speaks, Subreddit Simulator
 
 **Week Four: Writing as Code - Histories - January 28th and 30th**

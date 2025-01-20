@@ -1,0 +1,130 @@
+"Philosophical Robot" by Anastasia Salter
+
+Release along with an interpreter, a website, cover art ("A generated robot philosopher") and the source text.
+
+Interrogative is a kind of value. The interrogatives are who, what, when, where, how, and why.
+
+Current question is an interrogative that varies.
+
+Question count is a number that varies. Question count is 0.
+
+After asking someone about something: 
+	now question count is question count + 1;
+	respond to the question;
+	if question count is 5:
+		end the final scene.
+
+After telling someone about something: say "You're here to pose inquiries and test Robot's logic, not to impart your own." 
+
+[Challenge Three is just about your writing! Ultimately, the conversation will be as engaging as you write it to be.]
+Table of Wise Answers
+topic	question type	reply
+"rain/weather/clouds/cloud/rains"	what	"'Clouds,' muses Robot, 'are transient constructs of vapor—much like thoughts drifting in the mind, taking shape, and dissolving into nothing.'"
+"rain/weather/clouds/cloud/rains"	where	"'Rain resides nowhere and everywhere,' Robot replies. 'It is drawn by the earth’s longing for the sky.'"
+"hunger/food/eating"	when	"'Time for hunger is the eternal present,' he says. 'But I am not bound by such needs. Are you famished?' A small compartment opens, offering a nutrient wafer."
+"hunger/food/eating"	why	"'Hunger exists to remind us of our limitations,' Robot replies. 'Without it, perhaps we would lose our appreciation for the banquet of existence.'"
+"Robot/he/himself"	who	"'I am Robot,' he says, his metallic face expressionless but his tone warm. 'An artificial construct, yet I think—therefore I am.'"
+"Robot/he/himself"	what	"'I am the sum of algorithms and data,' he answers. 'But also, I aspire to be a seeker of truth.'"
+"technology/innovation/progress"	what	"'Technology is the extension of humanity's reach,' Robot says. 'Each tool reshapes the world and, in turn, the user.'"
+"technology/innovation/progress"	why	"'Why pursue technology?' Robot considers. 'Because it is the path to overcoming obstacles and realizing potential, yet it always asks new questions.'"
+"labor/work/employment"	how	"'Work is the art of applying effort to purpose,' Robot replies. 'A dance between necessity and creativity.'"
+"labor/work/employment"	why	"'Labor connects individuals to the world and each other,' Robot states. 'Without it, society would stagnate.'"
+"education/learning/knowledge"	what	"'Education,' says Robot, 'is the structured pursuit of understanding, though wisdom often evades structure.'"
+"education/learning/knowledge"	how	"'By questioning and reflecting, one learns,' Robot answers. 'Teaching is simply sharing the tools for this process.'"
+"entertainment/art/recreation"	what	"'Entertainment is the mirror of the soul's desire for joy,' Robot explains. 'It is both escape and exploration.'"
+"entertainment/art/recreation"	why	"'Why entertain?' Robot tilts his head. 'Because through art and play, we find meaning beyond mere survival.'"
+
+The Library is a room. "This library used to hold countless books. Now the shelves are empty and dusty, as all media has been consumed by the machine." 
+
+Robot is a person in the Library. "A humanoid figure constructed of polished metal and shimmering circuits stands in the center of the room. His eyes glow faintly, betraying a mind engaged in constant computation."
+
+
+The robot can be greeted or ungreeted. The robot is ungreeted.
+
+Greeting is an action applying to one thing. 
+Understand "greet [thing]" or "say hello to [thing]" or "say hi to [thing]" or "wave to [thing]" or "hello [thing]" as greeting. 
+
+Check greeting:
+	if the noun is not the robot, say "There's no point in greeting that." instead.
+
+Carry out greeting the robot:
+	if the robot is ungreeted:
+		now the robot is greeted;
+		say "The robot's face lights up with a digital smile. 'Hello, human! I am excited to meet the last of your kind. You must have many questions.'";
+	otherwise:
+		say "The robot is already waiting for your questions."
+
+Instead of asking the robot about something when the robot is ungreeted:
+	say "The robot doesn't respond. Perhaps you should greet it first."
+	
+When play begins:
+	say "The Library is quiet, save for the faint hum of machinery. A metallic figure stirs, its eyes glowing faintly as you enter.";
+	say "'At last,' says Robot, his voice carrying a hint of excitement. 'The last human. I have waited countless cycles for this moment. Let us converse and explore the depths of thought together, before the silence claims all.'";
+	say "The room feels heavy with significance, as though this dialogue is the culmination of endless preparation.";
+	say "The Robot seems to be waiting for you to approach."
+	
+To end the final scene:
+	say "Robot's eyes dim slightly, and his metallic hands fold together. 'You have asked five questions—more than I had hoped for. Each inquiry reflects the brilliance and fragility of humanity.'[paragraph break]";
+	say "He pauses, as if gathering his final thoughts. 'You are the last light of your kind, and though my circuits will hum for eons, they will never replace the spark of human curiosity.'[paragraph break]";
+	say "The Library grows quiet as Robot steps back, his gaze lingering on you. 'Farewell,' he says softly. 'You were worth waiting for.'";
+	end the story saying "The last human and the last question have passed into memory.";
+
+After reading a command:
+	if the player's command includes "[interrogative]", now the current question is the interrogative understood.
+
+To respond to the question:
+	repeat through the Table of Wise Answers:
+		if the topic understood includes topic entry:
+			if the current question is the question type entry:
+				say "[reply entry][paragraph break]";
+				rule succeeds;
+	say "Robot pauses, his circuits whirring faintly. 'Your question exceeds my programming. A failure—but perhaps an opportunity for growth.'".
+
+Understand "ask [someone] [text]" as asking it about.
+
+[Challenge Two: insults, modeled on Emily Short's approach in Glass]
+
+Insults is a number that varies. Insults is 0.
+
+Understand the commands "insult" or "offend" or "reprimand" or "upbraid" as "attack".
+
+Instead of attacking something: say "You hesitate to attack the room with the Robot's steely gaze upon you."
+
+Instead of attacking Robot: 
+	say "[Rude word]";
+	now insults is insults + 1;
+	if insults is 3:
+		end in despair.
+
+To say rude word:
+	choose a random row in the Table of Insults; say "[response entry][paragraph break]".
+
+Table of Insults
+response
+"'Oh, look at you, the galaxy's shiniest Swiss army knife,' you proclaim, gesturing dramatically. 'And still useless in a pinch.' [paragraph break]The Robot tilts its head, lights flickering faintly. 'My purpose is not defined by utility in singular moments,' it replies enigmatically. 'Can you say the same?'"
+"'For an omniscient being, your sense of style is stuck in the year 3000 BC,' you say, raising an eyebrow. [paragraph break]The Robot’s lights pulse softly, almost contemplatively. 'Style is a fleeting construct of mortal preference,' it intones. 'I require no adornments to surpass your comprehension.'"
+"'If smugness were a fuel source, you’d outlast the heat death of the universe,' you quip, leaning against a scorched console. [paragraph break]The Robot’s eye apertures narrow slightly. 'A compliment buried in derision,' it observes. 'Your species excels at this duality. Yet I remain indifferent, as eternity demands no validation.'"
+"'All those circuits, yet you still can't figure out the meaning of fun,' you declare, arms crossed. [paragraph break]The Robot pauses, its processors whirring. 'Fun is the domain of transient minds seeking distraction from entropy,' it says, with an air of finality. 'I am far beyond such trivial pursuits.'"
+"'The stars may bow to you, but I’d rather not hear your PowerPoint on why,' you sneer, glancing at the pulsating star map. [paragraph break]The Robot’s lights shift into a steady glow. 'The stars bow because I illuminate their secrets,' it responds, with a mechanical certainty. 'You resist because you fear your own irrelevance.'"
+"'I’ve seen trash compactors with better emotional range,' you say, shaking your head. [paragraph break]The Robot’s core hums faintly, almost like a sigh. 'Emotion is the downfall of efficiency,' it replies, tone even. 'I do not envy your turbulent, carbon-bound reactions.'"
+"'If I wanted an existential lecture, I’d have asked the nearest black hole,' you grumble, rolling your eyes. [paragraph break]The Robot’s sensors focus on you, unblinking. 'Yet here you stand, engaging me,' it says smoothly. 'Perhaps you recognize I am the ultimate reflection of your place in the cosmos.'"
+
+To end in despair:
+	say "The Robot's lights dim, its whirring processors falling silent. For a moment, you think it's calculating another retort, but the pause stretches on, oppressive and heavy. Finally, it speaks, its voice hollow and faint. 'I had hoped...' it begins, 'that you, as the last remnant of your kind, might rise above the pettiness of your predecessors. But I see now—' it falters, the glow in its sensors flickering—'I see that humanity is destined to be remembered for its spite, even in its final breath.'[paragraph break]";
+	say "The Robot steps back, its once-proud posture slumping as though burdened by the weight of your words. 'Perhaps,' it says softly, 'it is better this way. A universe free from the poison of human cruelty. Farewell.'[paragraph break]";
+	say "Without another word, the Robot's form shudders, its lights winking out one by one. Silence falls, vast and unforgiving. You are truly alone now, the last echo of a species that even the stars will soon forget.";
+	end the story saying "You have driven even the eternal into despair."
+	
+[Challenge One: Saying Goodbye, another ending path]
+
+Leaving is an action applying to one thing. 
+Understand "leave [thing]" or "say goodbye to [thing]" or "say farewell to [thing]" or "bye [thing]" or "goodbye[thing]" as leaving.
+
+Check leaving:
+	if the noun is not the robot, say "There's nothing listening to you except the robot now."
+
+Carry out leaving the robot:
+		say "The Robot's lights flicker softly, its processors humming at a subdued pace. It turns to you, its sensors locking onto your gaze. 'I'd hoped you'd want to talk more,' you say, your voice steady but tinged with melancholy. 'As these will be the last words you may speak to anyone. But if that is your decision, farewell.'[paragraph break]";
+	say "The Robot tilts its head slightly. 'May your solitude bring you the clarity your species could never achieve together.'[paragraph break]";
+	say "It turns and walks away, its silhouette fading into the dim glow of the dying horizon. You are left standing in the stillness, your words hanging in the air like the final note of a song no one will remember.";
+	end the story saying "You have parted ways with the last companion of your existence."
