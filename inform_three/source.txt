@@ -1,0 +1,234 @@
+"The Last Human" by Anastasia Salter
+
+Release along with an interpreter, a website, cover art ("A generated robot philosopher") and the source text.
+
+The story genre is "Generated.".
+
+The story headline is "A Class Demo".
+
+The story creation year is 2025.
+
+The release number is 1.
+
+The story description is "A mostly generated work of speculative fiction constructed as a demo to introduce conversational agents and natural language programming."
+
+Chapter 1 - Defining Conversation
+
+[We'll use chapters to handle our rules, and each room of the story. Make sure these conversation rules are appropriate to the multiple characters you add]
+
+Interrogative is a kind of value. The interrogatives are who, what, when, where, how, and why.
+
+Understand "ask [someone] [text]" as asking it about.
+
+Current question is an interrogative that varies.
+
+After reading a command:
+	if the player's command includes "[interrogative]", now the current question is the interrogative understood.
+	
+Question count is a number that varies. Question count is 0.
+
+Greeting is an action applying to one thing. 
+Understand "greet [thing]" or "say hello to [thing]" or "say hi to [thing]" or "wave to [thing]" or "hello [thing]" as greeting. 
+
+[This redefines greeting to handle both characters as well as all objects added to the game]
+Check greeting:
+	if the noun is the Assistant, say "The assistant is already hanging on to your every word." instead;
+	if the noun is not the robot, say "There's no point in greeting that." instead.
+
+Carry out greeting the robot:
+	if the robot is ungreeted:
+		now the robot is greeted;
+		say "The robot's face lights up with a digital smile. 'Hello, human! I am excited to meet the last of your kind. You must have many questions.'";
+	otherwise:
+		say "The robot is already waiting for your questions."
+
+[This redefines insults so that only the robot can be insulted]
+Insults is a number that varies. Insults is 0.
+
+Understand the commands "insult" or "offend" or "reprimand" or "upbraid" as "attack".
+
+Instead of attacking the Assistant, say "You consider insulting the assistant, or even smashing the console from which it cheerily mocks you...but what would be the point?" instead.
+
+Instead of attacking Robot: 
+	say "[Rude word]";
+	now insults is insults + 1;
+	if insults is 3:
+		end in despair.
+
+Table of Insults
+response
+"'Oh, look at you, the galaxy's shiniest Swiss army knife,' you proclaim, gesturing dramatically. 'And still useless in a pinch.' [paragraph break]The Robot tilts its head, lights flickering faintly. 'My purpose is not defined by utility in singular moments,' it replies enigmatically. 'Can you say the same?'"
+"'For an omniscient being, your sense of style is stuck in the year 3000 BC,' you say, raising an eyebrow. [paragraph break]The Robot’s lights pulse softly, almost contemplatively. 'Style is a fleeting construct of mortal preference,' it intones. 'I require no adornments to surpass your comprehension.'"
+"'If smugness were a fuel source, you’d outlast the heat death of the universe,' you quip, leaning against a scorched console. [paragraph break]The Robot’s eye apertures narrow slightly. 'A compliment buried in derision,' it observes. 'Your species excels at this duality. Yet I remain indifferent, as eternity demands no validation.'"
+"'All those circuits, yet you still can't figure out the meaning of fun,' you declare, arms crossed. [paragraph break]The Robot pauses, its processors whirring. 'Fun is the domain of transient minds seeking distraction from entropy,' it says, with an air of finality. 'I am far beyond such trivial pursuits.'"
+"'The stars may bow to you, but I’d rather not hear your PowerPoint on why,' you sneer, glancing at the pulsating star map. [paragraph break]The Robot’s lights shift into a steady glow. 'The stars bow because I illuminate their secrets,' it responds, with a mechanical certainty. 'You resist because you fear your own irrelevance.'"
+"'I’ve seen trash compactors with better emotional range,' you say, shaking your head. [paragraph break]The Robot’s core hums faintly, almost like a sigh. 'Emotion is the downfall of efficiency,' it replies, tone even. 'I do not envy your turbulent, carbon-bound reactions.'"
+"'If I wanted an existential lecture, I’d have asked the nearest black hole,' you grumble, rolling your eyes. [paragraph break]The Robot’s sensors focus on you, unblinking. 'Yet here you stand, engaging me,' it says smoothly. 'Perhaps you recognize I am the ultimate reflection of your place in the cosmos.'"
+
+To say rude word:
+	choose a random row in the Table of Insults;
+	say "[response entry][paragraph break]".
+
+
+Chapter 2 - The Cyrochamber
+
+[This is now the start of the game - our rooms will be chapters in order, although the player can move back and forth.]
+When play begins:
+	say "The first sensation is cold. Your breath clouds the glass of the cryopod as your body jolts into awareness. The pod door hisses open, releasing a rush of stale air.";
+	say "You stagger forward, feet unsteady on the chilled metal floor. The room is dim, lit by the weak pulse of ancient machinery. In the distance, a faint hum draws your attention.";
+	now the player is in the Cryochamber.
+	
+The Cryochamber is a room. "The chamber is dimly lit, illuminated only by the pale blue glow of flickering status lights. Frost clings to the glass walls of the cryopod, slowly melting into rivulets that trace patterns down its surface. The air is heavy with the sterile, metallic tang of disuse and time. A small control panel with a glowing button is mounted on a nearby console."
+
+[This is not much of a puzzle, but it introduces the player to agency and requires pushing the button. The instead of rule handles the built in action, take, to make sure the player can't pocket the button.]
+
+A button is a thing in the Cryochamber. The description of the button is "A single round button glowing faintly, labeled 'Release.' It seems to pulse with a sense of urgency, almost inviting you to press it." 
+
+Instead of taking the button:
+	say "The button is securely mounted to the control panel. It’s not something you can take with you."
+
+[This advances the player only when the button is pushed]
+After pushing the button:
+	say "A sharp hiss fills the room as the cryopod’s seals break. The glass door slides open, releasing a rush of stale, freezing air. Your body jolts into awareness as you take your first unsteady steps forward.";
+	now the player is in the Holding Room.
+
+Chapter 3 - The Holding Room
+
+[Dividing each room into its own chapter can help with the organizational logic]
+
+The Holding Room is east of the Cryochamber. "[first time]The intercom hums to life, and the pixelated face blinks into clarity.[paragraph break]'Ah, you’re awake!' the Assistant chirps brightly. 'It’s been… oh, let me check… several centuries! But don’t worry, you’re looking great. Before proceeding to the Library, we should probably make sure you’re fully functional. Are you feeling dizzy? Disoriented? Existentially uncertain? I’m here to help!'[paragraph break][only]This room is spartan and sterile, with smooth walls that seem to absorb sound. A faint hum emanates from unseen machinery. Mounted on the wall is a sleek intercom panel, its screen glowing faintly. The word 'ASSISTANT' blinks rhythmically on the screen."
+
+The metal desk is a supporter in the Holding Room. The description of the metal desk is "A plain metal desk sits in the corner, its drawer slightly ajar, as though hastily closed at some point in the distant past."
+
+The drawer is a container and part of the metal desk. The drawer is closed and not openable. The description of the drawer is "It's sticky, like it hasn't been opened in many years."
+
+Instead of opening the drawer:
+	say "The drawer resists your efforts—it seems to be jammed slightly. Maybe a good pull would loosen it."
+
+Instead of pulling the drawer:
+	now the drawer is open;
+	say "You tug on the drawer with a bit of force, and it finally slides open with a screech. Inside, you find a small plastic keycard, slightly scratched but intact."
+
+The keycard is in the drawer. The description of the keycard is "A standard access keycard with a magnetic stripe. It’s labeled 'Library Access' in faded letters."
+
+The portal is a door. The portal is west of the Holding Room and east of the Library. The portal is closed and locked. The description of the portal is "A heavy metal door with a glowing swipe panel beside it. It hums faintly with energy, but it won't budge without proper authorization."
+
+Instead of opening the portal:
+	if the player carries the keycard:
+		now the portal is unlocked;
+		say "You swipe the keycard, and the panel emits a cheerful beep. The portal slides open with a hiss, granting you access to the Library.";
+		now the player is in the library;
+	otherwise:
+		say "You don't have the keycard to swipe."
+
+Instead of going west through the locked portal:
+	say "The portal remains firmly shut, the glowing swipe panel mocking your progress."
+
+[Here we define the assistant's replies, which are mostly designed to be unhelpful]
+Table of Vague Replies
+topic	question type	reply
+"humanity/human/humans/people"	what	"'Humanity?' the Assistant chirps brightly. 'Oh, they were such an industrious and curious bunch! Always doing something or other. Marvelous, really. As for now… well, it’s just you and me!'"
+"humanity/human/humans/people"	where	"'Where is everyone?' the Assistant repeats with an artificial chuckle. 'Oh, here, there, everywhere! Let’s just say they’ve moved on to… different pursuits.'"
+"humanity/human/humans/people"	why	"'Why?' the Assistant says, almost gleefully. 'Oh, why indeed! It’s all so fascinating, isn’t it? So many reasons, so little time!'"
+"humanity/human/humans/people"	how	"'How did it all happen?' the Assistant hums a little tune. 'Oh, let’s not dwell on the past. The present is what matters, don’t you think?'"
+"time/freezing/frozen"	what	"'Time?' the Assistant says cheerfully. 'Oh, it’s such a fluid concept, really! What’s important is that you’re here now, and that’s what counts.'"
+"time/freezing/frozen"	how	"'How long?' the Assistant repeats. 'Oh, I wouldn’t worry about that. Long enough to make an impression, but short enough that you’re still you. Isn’t that comforting?'"
+"portal/door/access"	what	"'The portal? Oh yes, it’s locked at the moment,' the Assistant says with unrelenting cheer. 'But don’t worry, there’s a handy keycard somewhere nearby. I’m sure you’ll figure it out!'" 
+"portal/door/access"	how	"'How does it work? Oh, it’s delightfully simple!' the Assistant chirps. 'You just need the keycard and a little swipe-swipe, and voilà!'"
+"key/card/swipe"	what	"'The keycard? Oh yes, such a useful little thing!' the Assistant says. 'I’m sure it’s around here somewhere. Probably left in a very sensible place!'"
+"key/card/swipe"	where	"'Where is it?' The Assistant hums thoughtfully. 'Oh, that’s the fun of discovery, isn’t it? Try looking around—maybe check something dusty and neglected.'"
+"life/existence/survival"	what	"'Life is a marvelous enigma,' the Assistant proclaims. 'So many questions and so few answers! Aren’t you lucky to ponder it all?'"
+"life/existence/survival"	why	"'Why survive?' the Assistant giggles. 'Oh, isn’t that the big question? Why not, I say! There’s so much to see and do!'"
+"robots/technology/AI"	what	"'Robots are marvels of engineering!' the Assistant declares. 'Present company included, of course. We’re always here to lend a helping… circuit!'"
+"robots/technology/AI"	why	"'Why robots?' the Assistant muses. 'Well, why not? We’re here to make life easier! Though it seems we’ve also outlasted some of the other players…'"
+
+[Unlike the robot, our assistant does not need to be greeted as it is is here to help - note how this is handled in the conersation rules]
+
+Assistant is a person in the Holding Room. "The intercom screen displays the image of a pixelated face, shifting slightly as if mimicking expressions. The assistant’s voice is calm, mechanical, but unnervingly conversational."
+
+[Make sure to use a separate rule here for replying to the question, so that you don't reference the wrong table.]
+After asking assistant about something: 
+	handle the question.
+
+To handle the question:
+	repeat through the Table of Vague Replies:
+		if the topic understood includes topic entry:
+			if the current question is the question type entry:
+				say "[reply entry][paragraph break]";
+				rule succeeds;
+	say "The intercom chirps, but there is no response.".
+
+
+Chapter 4 - The Library
+
+The Library is west of the portal. "This library used to hold countless books. Now the shelves are empty and dusty, as all media has been consumed by the machine. A faint hum of dormant machinery fills the air.[first time]A metallic figure stirs as you enter, its eyes glowing faintly.[paragraph break]'At last,' says the Robot, his voice carrying a hint of excitement. 'The last human. I have waited countless cycles for this moment. Let us converse and explore the depths of thought together, before the silence claims all.'[paragraph break]The room feels heavy with significance, as though this dialogue is the culmination of endless preparation. The Robot seems to be waiting for you to approach.[only]"
+
+Robot is a person in the Library. "A humanoid figure constructed of polished metal and shimmering circuits stands in the center of the room. His eyes glow faintly, betraying a mind engaged in constant computation."
+
+The robot can be greeted or ungreeted. The robot is ungreeted.
+
+Instead of asking the robot about something when the robot is ungreeted:
+	say "The robot doesn't respond. Perhaps you should greet it first."
+	
+Instead of asking the robot about something when the robot is ungreeted:
+	say "The robot doesn't respond. Perhaps you should greet it first."
+	
+After asking robot about something: 
+	now question count is question count + 1;
+	respond to the question;
+	if question count is 5:
+		end the final scene.
+
+To respond to the question:
+	repeat through the Table of Wise Answers:
+		if the topic understood includes topic entry:
+			if the current question is the question type entry:
+				say "[reply entry][paragraph break]";
+				rule succeeds;
+	say "Robot pauses, his circuits whirring faintly. 'Your question exceeds my programming. A failure—but perhaps an opportunity for growth.'".
+
+
+After telling robot about something: say "You're here to pose inquiries and test Robot's logic, not to impart your own." 
+
+Table of Wise Answers
+topic	question type	reply
+"rain/weather/clouds/cloud/rains"	what	"'Clouds,' muses Robot, 'are transient constructs of vapor—much like thoughts drifting in the mind, taking shape, and dissolving into nothing.'"
+"rain/weather/clouds/cloud/rains"	where	"'Rain resides nowhere and everywhere,' Robot replies. 'It is drawn by the earth’s longing for the sky.'"
+"hunger/food/eating"	when	"'Time for hunger is the eternal present,' he says. 'But I am not bound by such needs. Are you famished?' A small compartment opens, offering a nutrient wafer."
+"hunger/food/eating"	why	"'Hunger exists to remind us of our limitations,' Robot replies. 'Without it, perhaps we would lose our appreciation for the banquet of existence.'"
+"Robot/he/himself"	who	"'I am Robot,' he says, his metallic face expressionless but his tone warm. 'An artificial construct, yet I think—therefore I am.'"
+"Robot/he/himself"	what	"'I am the sum of algorithms and data,' he answers. 'But also, I aspire to be a seeker of truth.'"
+"technology/innovation/progress"	what	"'Technology is the extension of humanity's reach,' Robot says. 'Each tool reshapes the world and, in turn, the user.'"
+"technology/innovation/progress"	why	"'Why pursue technology?' Robot considers. 'Because it is the path to overcoming obstacles and realizing potential, yet it always asks new questions.'"
+"labor/work/employment"	how	"'Work is the art of applying effort to purpose,' Robot replies. 'A dance between necessity and creativity.'"
+"labor/work/employment"	why	"'Labor connects individuals to the world and each other,' Robot states. 'Without it, society would stagnate.'"
+"education/learning/knowledge"	what	"'Education,' says Robot, 'is the structured pursuit of understanding, though wisdom often evades structure.'"
+"education/learning/knowledge"	how	"'By questioning and reflecting, one learns,' Robot answers. 'Teaching is simply sharing the tools for this process.'"
+"entertainment/art/recreation"	what	"'Entertainment is the mirror of the soul's desire for joy,' Robot explains. 'It is both escape and exploration.'"
+"entertainment/art/recreation"	why	"'Why entertain?' Robot tilts his head. 'Because through art and play, we find meaning beyond mere survival.'"
+
+Chapter 5 - Endings
+
+To end the final scene:
+	say "Robot's eyes dim slightly, and his metallic hands fold together. 'You have asked five questions—more than I had hoped for. Each inquiry reflects the brilliance and fragility of humanity.'[paragraph break]";
+	say "He pauses, as if gathering his final thoughts. 'You are the last light of your kind, and though my circuits will hum for eons, they will never replace the spark of human curiosity.'[paragraph break]";
+	say "The Library grows quiet as Robot steps back, his gaze lingering on you. 'Farewell,' he says softly. 'You were worth waiting for.'";
+	end the story saying "The last human and the last question have passed into memory.";
+
+To end in despair:
+	say "The Robot's lights dim, its whirring processors falling silent. For a moment, you think it's calculating another retort, but the pause stretches on, oppressive and heavy. Finally, it speaks, its voice hollow and faint. 'I had hoped...' it begins, 'that you, as the last remnant of your kind, might rise above the pettiness of your predecessors. But I see now—' it falters, the glow in its sensors flickering—'I see that humanity is destined to be remembered for its spite, even in its final breath.'[paragraph break]";
+	say "The Robot steps back, its once-proud posture slumping as though burdened by the weight of your words. 'Perhaps,' it says softly, 'it is better this way. A universe free from the poison of human cruelty. Farewell.'[paragraph break]";
+	say "Without another word, the Robot's form shudders, its lights winking out one by one. Silence falls, vast and unforgiving. You are truly alone now, the last echo of a species that even the stars will soon forget.";
+	end the story saying "You have driven even the eternal into despair."
+
+Leaving is an action applying to one thing. 
+Understand "leave [thing]" or "say goodbye to [thing]" or "say farewell to [thing]" or "bye [thing]" or "goodbye [thing]" as leaving.
+
+Check leaving:
+	if the noun is not the robot, say "There's no way to leave that."
+
+Carry out leaving the robot:
+		say "The Robot's lights flicker softly, its processors humming at a subdued pace. It turns to you, its sensors locking onto your gaze. 'I'd hoped you'd want to talk more,' you say, your voice steady but tinged with melancholy. 'As these will be the last words you may speak to anyone. But if that is your decision, farewell.'[paragraph break]";
+	say "The Robot tilts its head slightly. 'May your solitude bring you the clarity your species could never achieve together.'[paragraph break]";
+	say "It turns and walks away, its silhouette fading into the dim glow of the dying horizon. You are left standing in the stillness, your words hanging in the air like the final note of a song no one will remember.";
+	end the story saying "You have parted ways with the last companion of your existence."

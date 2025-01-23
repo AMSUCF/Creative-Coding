@@ -1,6 +1,6 @@
 ## Interactive Fiction
 
-The first project is a work of interactive fiction created in Inform 7. This project should be developed using a combination of the work from your previous creative code exercises (the [imagined room](code_one.md) and [conversation simulator](code_two.md)) and the in-class demos. This work should be extended using genAI coding methods to rewrite and extend your code, as modeled during the demos. 
+The first project is a work of interactive fiction created in Inform 7. This project should be developed using a combination of the work from your previous creative code exercises (the [imagined room](code_one.md) and [conversation simulator](code_two.md)) and the in-class demos. This work should be extended using genAI coding methods to rewrite and extend your code, as modeled during the demos. Refer to the [completed example](./inform_three/) for a model of what a complete work should include.
 
 This project should include:
 
