@@ -115,9 +115,11 @@ All readings should be completed before the class meeting as listed. Every class
 **Week Five: Code as Writing - Bots - February 4th and 6th**
 
  - Tuesday: **[Taroko Gorge Re-Remix Due](code_three.md)**
+   - Code reading: [NaNoGenMo](https://nanogenmo.github.io/)
    - Demo: [Tracery Grammars - Text](https://github.com/galaxykate/tracery)
    - Read: *Code to Joy* - Defining Functions
  - Thursday: [Tracery Grammars - Images](https://github.com/derekahmedzai/cheapbotsdonequick/blob/master/svg-tracery-image-bots.md)
+   - Code reading: [Cheap Bots](https://cheapbotstootsweet.com/)
    - Demo: [Bluesky Bot](bot.json)
    - Read: *Output* - Tweets and Microblogging (all)
 
@@ -146,7 +148,7 @@ All readings should be completed before the class meeting as listed. Every class
 
 **Week Nine: Creative Code - Interfaces - March 4th and 6th**
 
- - Tuesday: **Visual Sorter Due**
+ - Tuesday: **ML5.js Piece Due**
    - Read: *Artificial Intelligence* - Part IV: Artificial Intelligence Meets Natural Language
  - Thursday: Combining libraries
    - Read: *Output* - Humor (all)
