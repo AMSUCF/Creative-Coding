@@ -102,7 +102,7 @@ All readings should be completed before the class meeting as listed. Every class
    - Demo: [Iterating and Combining](inform_four.md)
    - Read: *Output* - Conversations: ELIZA, SHRDLU, PARRY, ALICE, Cleverbot, Tay, Sandy Speaks, Subreddit Simulator
 
-**Week Four: Writing as Code - Histories - January 28th and 30th**
+**Week Four: Code as Writing - Histories - January 28th and 30th**
 
  - Tuesday: **[Interactive Fiction Due](interactive_fiction.md)**
    - Demo: [Distant Read](distant_read.md)
@@ -112,16 +112,18 @@ All readings should be completed before the class meeting as listed. Every class
    - Demo: [Combining Texts](combine_texts.md)
    - Read: *Output* - Poetry: Taroko Gorge, House of Trust, and five others (your choice)
 
-**Week Five: Writing as Code - Bots - February 4th and 6th**
+**Week Five: Code as Writing - Bots - February 4th and 6th**
 
  - Tuesday: **[Taroko Gorge Re-Remix Due](code_three.md)**
+   - Demo: [Tracery Grammars - Text](https://github.com/galaxykate/tracery)
    - Read: *Code to Joy* - Defining Functions
- - Thursday: Tracery Grammars
+ - Thursday: [Tracery Grammars - Images](https://github.com/derekahmedzai/cheapbotsdonequick/blob/master/svg-tracery-image-bots.md)
+   - Demo: [Bluesky Bot](bot.json)
    - Read: *Output* - Tweets and Microblogging (all)
 
-**Week Six: Writing as Code - Poetics - February 11th and 13th**
+**Week Six: Code as Writing - Poetics - February 11th and 13th**
 
- - Tuesday: **Bluesky Bot Due**
+ - Tuesday: **[Bluesky Bot Due](bot.md)**
    - Read: *Code to Joy* - Combining Code and Data
    - Read: *Artificial Intelligence* - Part I: Background
  - Thursday: Tracery and P5.js
