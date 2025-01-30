@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poem Display</title>
+    <style>
+        body {
+            background-color: #f4ecd8;
+            color: #4a3f35;
+            font-family: 'Garamond', serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #8b7961;
+            background-color: #fdf8f2;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: left;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Centos Story</h1>
+        <p id="line1">Chloroform may be used for cleaning the most delicate silks, though this is rather expensive.</p>
+        <p id="line2">This pudding is better for being mixed over-night.</p>
+        <p id="line3">THE DAILY DUTIES OF A HOUSEKEEPER are regulated, in a great measure, by the extent of the establishment she superintends.</p>
+        <p id="line4">Tests on the physical properties of woods.</p>
+        <p id="line5">Sufficient to serve with a leg of mutton.</p>
+        <p id="line6">FRIED WHITING.</p>
+        <p id="line7">From 3/4 to 1 hour to swell the rice, 1/2 to 3/4 hour to bake the casserole.</p>
+        <p id="line8">Sufficient water to cover the fish; 1/4 lb.</p>
+        <p id="line9">Apple-corer, an instrument lately invented for the purpose of divesting apples of their cores.</p>
+        <p id="line10">A man may possess all the resources for enjoyment which this world can afford, and yet feel that "all is vanity and vexation of spirit," and that he is supremely wretched.</p>
+        <p id="line11">Sal ammoniac, 119, 162, 165, 176, 185.</p>
+        <p id="line12">INGREDIENTS.</p>
+        <p id="line13">Ham.</p>
+        <p id="line14">Warm fluids are applied in order to render the swelling which accompanies inflammation less painful, by the greater readiness with which the skin yields, than when it is harsh and dry.</p>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let lines = document.querySelectorAll("p");
+            let delay = 1000;
+            lines.forEach((line, index) => {
+                setTimeout(() => {
+                    line.style.visibility = "visible";
+                }, delay * (index + 1));
+            });
+        });
+    </script>
+</body>
+</html>
