@@ -133,7 +133,7 @@ All readings should be completed before the class meeting as listed. Every class
 
 **Week Seven: Creative Code - Games - February 18th and 20th**
 
- - Tuesday: **Text Generator Due**
+ - Tuesday: **[Text Generator Due](text_generator.md)**
    - Read: *Code to Joy* - Programmable World
    - Read: *Artificial Intelligence* - Part II: Looking and Seeing
  - Thursday: P5.js Interactions
