@@ -31,39 +31,45 @@
 <body>
     <h1>Proustian Letter Generator</h1>
     <div class="letter" id="letter">Loading...</div>
-    <button onclick="generateLetter()">Generate New Letter</button>
+    <button id="generateBtn">Generate New Letter</button>
+
     
     <script>
         let vocabulary;
-        
-        fetch('cleaned_categorized_nouns.json')
-            .then(response => response.json())
-            .then(data => {
-                vocabulary = data;
-                generateLetter();
-            });
-
-        function randomItem(arr) {
-            return arr[Math.floor(Math.random() * arr.length)];
+    
+        async function loadJSON() {
+            try {
+                const response = await fetch('cleaned_categorized_nouns.json');
+                vocabulary = await response.json();
+                generateLetter(); // Only generate once the data is ready
+            } catch (error) {
+                console.error("Failed to load JSON:", error);
+            }
         }
-
+    
         function generateLetter() {
             if (!vocabulary) return;
-            
+    
             let grammar = {
                 "origin": [
-                    "My dear friend,\n\nThe #abstract# of our last meeting lingers in my mind, much like the #objects# in a forgotten #places#. In that #places#, we encountered a #people#, who spoke of #abstract# and the ever-changing nature of #objects#.\n\nI find myself yearning for the #places#, where the #abstract# of existence unfolds as subtly as a #objects# upon the shore. Let us meet soon.\n\nYours in reverie,\nA."
+                    "My dear friend,\\n\\nThe #abstract# of our last meeting lingers in my mind, much like the #objects# in a forgotten #places#. In that #places#, we encountered a #people#, who spoke of #abstract# and the ever-changing nature of #objects#.\\n\\nI find myself yearning for the #places#, where the #abstract# of existence unfolds as subtly as a #objects# upon the shore. Let us meet soon.\\n\\nYours in reverie,\\nA."
                 ],
                 "people": vocabulary.people,
                 "places": vocabulary.places,
                 "objects": vocabulary.objects,
                 "abstract": vocabulary.abstract
             };
-
+    
             let traceryGrammar = tracery.createGrammar(grammar);
             let letterText = traceryGrammar.flatten("#origin#");
             document.getElementById("letter").innerHTML = letterText.replace(/\n/g, '<br>');
         }
+    
+        document.addEventListener("DOMContentLoaded", () => {
+            loadJSON();
+            document.getElementById("generateBtn").addEventListener("click", generateLetter);
+        });
     </script>
+    
 </body>
 </html>
