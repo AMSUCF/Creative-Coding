@@ -121,6 +121,7 @@ All readings should be completed before the class meeting as listed. Every class
  - Thursday: [Tracery Grammars - Images](https://github.com/derekahmedzai/cheapbotsdonequick/blob/master/svg-tracery-image-bots.md)
    - Code reading: [Cheap Bots](https://cheapbotstootsweet.com/)
    - Demo: [Bluesky Bot](bot.json)
+   - Demo: [Local AI](local_ai.md)
    - Read: *Output* - Tweets and Microblogging (all)
 
 **Week Six: Code as Writing - Poetics - February 11th and 13th**
