@@ -119,7 +119,8 @@ All readings should be completed before the class meeting as listed. Every class
    - Demo: [Tracery Grammars - Text](https://github.com/galaxykate/tracery)
    - Read: *Code to Joy* - Defining Functions
  - Thursday: [Tracery Grammars - Images](https://github.com/derekahmedzai/cheapbotsdonequick/blob/master/svg-tracery-image-bots.md)
-   - Code reading: [Cheap Bots](https://cheapbotstootsweet.com/)
+   - Code reading: [Cheap Bots](https://cheapbotstootsweet.com/) + [Image bots](https://alien-sunset.neocities.org/bots/Bots)
+   - Discuss: [The problem with SVGs](https://simonwillison.net/tags/pelican-riding-a-bicycle/)
    - Demo: [Bluesky Bot](bot.json)
    - Demo: [Local AI](local_ai.md)
    - Read: *Output* - Tweets and Microblogging (all)
@@ -129,7 +130,9 @@ All readings should be completed before the class meeting as listed. Every class
  - Tuesday: **[Bluesky Bot Due](bot.md)**
    - Read: *Code to Joy* - Combining Code and Data
    - Read: *Artificial Intelligence* - Part I: Background
+   - Demo: Using Local AI for grammar development
  - Thursday: Tracery and P5.js
+   - Demo: Building with Tracery for the web
    - Read: *Output* - Haiku (all)
 
 **Week Seven: Creative Code - Games - February 18th and 20th**
