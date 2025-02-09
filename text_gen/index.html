@@ -42,7 +42,7 @@
 <script>
 
         $(document).ready(function() {
-            setTimeout(function () {
+            setInterval(function () {
                  $.getJSON('sighting.json', function(sighting) {
                     var grammar = tracery.createGrammar(sighting);
                 
@@ -55,7 +55,7 @@
                     $("#sightings").empty().append(sightingReport);
                     $("#illustration").empty().append(image);
                  });
-            }, 5000);
+            }, 3000);
         });
 </script>
 </html>
