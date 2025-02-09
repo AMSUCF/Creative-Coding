@@ -37,7 +37,7 @@
 <script>
 
       var sighting = {
-        "origin": [
+        "phrase": [
             "Report: A #adjective# #alien_type# was sighted #location#. The entity is believed to be from #origin#. Witnesses describe it as #description#.",
             "Breaking News: A #adjective# #alien_type# has been spotted #location#. Experts suggest it hails from #origin#. It was seen #activity#.",
             "Unbelievable! A #adjective# #alien_type# has been encountered #location#. This being is said to originate from #origin# and was reportedly #activity#."
@@ -54,7 +54,7 @@
                 var grammar = tracery.createGrammar(sighting);
                 
                 // Generate sighting report
-                var sightingReport = grammar.flatten("#origin#");
+                var sightingReport = grammar.flatten("#phrase#");
                 
                 // Update content
                 $("#sightings").empty().append(sightingReport);
