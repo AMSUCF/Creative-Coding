@@ -33,9 +33,32 @@
       "entity", "creature", "visitor", "apparition", "manifestation", "thing", "form", "aberration", "figure", "presence", "phantasm", "anomaly", "monstrosity", "shadow", "wraith", "specter", "lifeform", "inhabitant", "unknown being", "extraterrestrial"
     ],
     "origin": [
-      "#month# #day#, #year# - #newspapers#<br>A reporter from our paper is on the scene after #observers# spotted a #adjectives# #being#. - #journalists#"
+      "<strong>#month# #day#, #year#</strong><br><i>#newspapers#</i><br><br>A reporter from our paper is on the scene after #observers# spotted a #adjectives# #being#. <br><br>- by #journalists#"
     ],
-    "svg": ["<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"200\" height=\"200\"><rect width=\"200\" height=\"200\" fill=\"black\"/>#spaceship#</svg>"],
-    "spaceship": ["<ellipse cx=\"100\" cy=\"100\" rx=\"70\" ry=\"30\" fill=\"dimgray\" stroke=\"silver\" stroke-width=\"2\"/><ellipse cx=\"100\" cy=\"80\" rx=\"30\" ry=\"20\" fill=\"darkslategray\" stroke=\"silver\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"100\" r=\"5\" fill=\"lime\"/><circle cx=\"80\" cy=\"110\" r=\"5\" fill=\"lime\"/><circle cx=\"100\" cy=\"115\" r=\"5\" fill=\"lime\"/><circle cx=\"120\" cy=\"110\" r=\"5\" fill=\"lime\"/><circle cx=\"140\" cy=\"100\" r=\"5\" fill=\"lime\"/><polygon points=\"70,130 130,130 160,200 40,200\" fill=\"rgba(255,255,0,0.5)\"/>"]
+    "title": ["#phenomena.capitalize#?"],
+    "image": ["<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"200\" height=\"200\"><rect width=\"200\" height=\"200\" fill=\"black\"/>#spaceship#</svg>"],
+    "spaceship": ["<ellipse cx=\"100\" cy=\"100\" rx=\"70\" ry=\"30\" fill=\"#colors#\" stroke=\"#colors#\" stroke-width=\"2\"/><ellipse cx=\"100\" cy=\"80\" rx=\"30\" ry=\"20\" fill=\"#colors#\" stroke=\"#colors#\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"100\" r=\"5\" fill=\"#colors#\"/><circle cx=\"80\" cy=\"110\" r=\"5\" fill=\"#colors#\"/><circle cx=\"100\" cy=\"115\" r=\"5\" fill=\"#colors#\"/><circle cx=\"120\" cy=\"110\" r=\"5\" fill=\"#colors#\"/><circle cx=\"140\" cy=\"100\" r=\"5\" fill=\"#colors#\"/><polygon points=\"70,130 130,130 160,200 40,200\" fill=\"#colors#\"/>"],
+    "colors": [
+          "aqua",
+          "lime",
+          "fuchsia",
+          "chartreuse",
+          "cyan",
+          "magenta",
+          "springgreen",
+          "deepskyblue",
+          "mediumvioletred",
+          "lawngreen",
+          "orangered",
+          "gold",
+          "hotpink",
+          "darkorchid",
+          "turquoise",
+          "electricblue",
+          "greenyellow",
+          "tomato",
+          "plum",
+          "peru"
+        ]
   }
   

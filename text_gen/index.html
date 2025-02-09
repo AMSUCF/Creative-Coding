@@ -48,8 +48,10 @@
                 
                     // Generate sighting report
                     var sightingReport = grammar.flatten("#origin#");
-                    var image = grammar.flatten("#svg#");
+                    var image = grammar.flatten("#image#");
+                    var title = grammar.flatten("#title#");
                     // Update content
+                    $("#title").empty().append(title);
                     $("#sightings").empty().append(sightingReport);
                     $("#illustration").empty().append(image);
                  });
