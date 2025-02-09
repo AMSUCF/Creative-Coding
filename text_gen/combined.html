@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alien Sightings Generator Demo</title>
+	<script src="p5.min.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script defer src="tracery.min.js"></script>
+	<script src="generator.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    
+    <style>
+        body {
+            background-color: black;
+            color: neon green;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #39ff14; /* Neon green */
+            text-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+        }
+
+        #sightings {
+            background-color: rgba(0, 255, 0, 0.8);
+            border: 2px solid #39ff14;
+            padding: 20px;
+            margin: 20px auto;
+            width: 50%;
+            min-height: 100px;
+            box-shadow: 0 0 20px #39ff14;
+            font-size: 1.2em;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="title">Alien Sightings Generator</h1>
+    <div id="illustration"></div>
+    <p id="sightings"></p>
+</body>
+<script>
+
+        $(document).ready(function() {
+            setInterval(function () {
+                 $.getJSON('sighting.json', function(sighting) {
+                    var grammar = tracery.createGrammar(sighting);
+                
+                    // Generate sighting report
+                    var sightingReport = grammar.flatten("#origin#");
+                    var image = grammar.flatten("#image#");
+                    var title = grammar.flatten("#title#");
+                    // Update content
+                    $("#title").empty().append(title);
+                    $("#sightings").empty().append(sightingReport);
+                    $("#illustration").empty().append(image);
+                 });
+            }, 3000);
+        });
+</script>
+</html>

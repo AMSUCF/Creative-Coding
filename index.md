@@ -132,7 +132,7 @@ All readings should be completed before the class meeting as listed. Every class
    - Read: *Artificial Intelligence* - Part I: Background
    - Demo: [Local AI, Grammars, and starting with Tracery for the web](tracery_web.md)
  - Thursday: Tracery and P5.js
-   - Demo: Building with Tracery for the web
+   - Demo: [Combining Tracery and P5](tracery_p5.md)
    - Read: *Output* - Haiku (all)
 
 **Week Seven: Creative Code - Games - February 18th and 20th**
