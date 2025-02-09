@@ -1,0 +1,39 @@
+{
+    "spaceships": [
+      "The Ares", "The Hopeful", "The Lewis and Clark", "The Rocinante", "The Dark Nebula", "The Trailblazer", "The Starship", "The Betty Lou", "The Space Beagle", "The Prometheus", "The Galileo", "The Pequod", "The Solar Queen", "The Terra"
+    ],
+    "adjectives": [
+      "mysterious", "glowing", "shadowy", "towering", "translucent", "unearthly", "luminescent", "tentacled", "silvery", "chitinous", "pulsating", "glistening", "horrific", "enigmatic", "gelatinous", "sinuous", "ancient", "slithering", "multi-limbed", "telepathic", "bioluminescent", "shimmering", "monstrous", "amorphous", "incomprehensible"
+    ],
+    "phenomena": [
+      "cosmic vortex", "radiation storm", "stellar flare", "plasma cloud", "gravity wave", "antimatter rift", "hyperwave disturbance", "neutrino burst", "ion storm", "dark nebula", "photon surge", "time dilation field", "magnetar pulse", "dimensional fissure", "quantum flux", "warp eddy", "tachyon stream", "event horizon", "pulsar echo", "meteor swarm", "luminous void", "subspace anomaly", "x-ray cascade", "stellar maelstrom", "etheric rift"
+    ],
+    "observers": [
+      "Buck Kendall", "Jill Boardman", "Elma York", "Leslie LeCroix", "Dan Davis", "Virginia Parsons", "Clifford 'Red' Jones", "Hugo Pinero", "Marge Cullen", "Jerry Cross", "Walter Tevis", "Francine 'Frankie' Sutton", "Tommy Stetson", "Harlan Dillon", "Ellen Ripley", "Sam Conrad", "Betty Travers", "George Haskins", "Edna Groves", "Lucas Tanner", "Randall Everett", "Miriam West", "Dr. Cal Meacham", "Hugh Hoyland", "Sally Holt", "Ted Bronson", "Nina Hagen", "Clark Rydell", "Arnie Decker"
+    ],
+    "reactions": [
+      "dumbfounded", "awestruck", "petrified", "transfixed", "disoriented", "speechless", "horrified", "entranced", "bewildered", "overwhelmed", "hypnotized", "shaken", "paralyzed", "exhilarated", "unnerved", "electrified", "stupefied", "haunted", "mesmerized", "panic-stricken", "convulsed", "reverent", "catatonic", "dazed", "unnaturally calm"
+    ],
+    "newspapers": [
+      "The Daily Gazette", "The Evening Tribune", "The Sentinel", "The Clarion", "The Morning Herald", "The Weekly Observer", "The Chronicle", "The Star-Ledger", "The Times-Dispatch", "The Courier", "The Register", "The Midwestern Sun", "The Rocky Mountain News", "The Bay City Post", "The Twin Falls Examiner", "The Metropolis Herald", "The Gotham Gazette", "The Springfield Beacon", "The Roswell Daily Record", "The Los Alamos Monitor", "The Pacific Sentinel", "The Lakeview Times", "The Shadow Creek Observer", "The Pine Hill Examiner", "The Crescent City Chronicle", "The Fairview Press", "The Oak Ridge Ledger", "The Capitol City Dispatch"
+    ],
+    "journalists": [
+      "Carl Kolchak", "Edward R. Murrow", "Lois Lane", "Clark Kent", "Hildy Johnson", "Dan Rather", "Walter Cronkite", "Mitch Kessler", "Dale Bailey", "Jake Sisko", "Frank Robertson", "Harry McGraw", "Margo Lane", "Herb Morrison", "Steve Wilson", "Connie Chung", "Howard K. Smith", "Brett Hutchins", "Phillip Wendell", "Maggie Callahan", "Rex Reason", "Jim Matthews", "Joan Stanley", "Fred Hurley", "Tom Grayson", "Gloria Faulkner", "Leo Brewster", "Betty Carter", "Vincent Conroy", "Sam Taggart"
+    ],
+    "month": [
+      "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+    ],
+    "day": [
+      "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28"
+    ],
+    "year": [
+      "1950", "1951", "1952", "1953", "1954", "1955", "1956", "1957", "1958", "1959", "1960", "1961", "1962", "1963", "1964", "1965", "1966", "1967", "1968", "1969"
+    ],
+    "being": [
+      "entity", "creature", "visitor", "apparition", "manifestation", "thing", "form", "aberration", "figure", "presence", "phantasm", "anomaly", "monstrosity", "shadow", "wraith", "specter", "lifeform", "inhabitant", "unknown being", "extraterrestrial"
+    ],
+    "origin": [
+      "#month# #day#, #year# - #newspapers#<br>A reporter from our paper is on the scene after #observers# spotted a #adjectives# #being#. - #journalists#"
+    ]
+  }
+  

@@ -40,28 +40,17 @@
 </body>
 <script>
 
-      var sighting = {
-        "phrase": [
-            "Report: A #adjective# #alien_type# was sighted #location#. The entity is believed to be from #origin#. Witnesses describe it as #description#.",
-            "Breaking News: A #adjective# #alien_type# has been spotted #location#. Experts suggest it hails from #origin#. It was seen #activity#.",
-            "Unbelievable! A #adjective# #alien_type# has been encountered #location#. This being is said to originate from #origin# and was reportedly #activity#."
-        ],
-        "alien_type": ["humanoid being", "insectoid creature", "glowing entity", "reptilian figure", "shapeshifting form", "floating sphere"],
-        "adjective": ["mysterious", "glowing", "shadowy", "towering", "translucent", "unearthly"],
-        "location": ["near an abandoned barn", "in a dense forest", "by the riverbank", "on a remote highway", "at a small-town gas station", "inside a cornfield"],
-        "origin": ["the Andromeda galaxy", "a distant exoplanet", "a hidden dimension", "deep within our own moon", "an unknown region of space", "beneath the ocean"],
-        "description": ["emitting a strange humming sound", "communicating in an unknown language", "moving in impossible ways", "vanishing without a trace", "radiating an eerie light"],
-        "activity": ["studying the environment", "observing humans from a distance", "leaving behind cryptic symbols", "hovering silently", "teleporting away instantly"]
-        }
         $(document).ready(function() {
             setTimeout(function () {
-                var grammar = tracery.createGrammar(sighting);
+                 $.getJSON('sighting.json', function(sighting) {
+                    var grammar = tracery.createGrammar(sighting);
                 
-                // Generate sighting report
-                var sightingReport = grammar.flatten("#phrase#");
+                    // Generate sighting report
+                    var sightingReport = grammar.flatten("#phrase#");
                 
-                // Update content
-                $("#sightings").empty().append(sightingReport);
+                    // Update content
+                    $("#sightings").empty().append(sightingReport);
+                 });
             }, 5000);
         });
 </script>
