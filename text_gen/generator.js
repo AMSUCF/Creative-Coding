@@ -12,7 +12,10 @@ $(document).ready(function () {
 });
 
 function setup() {
-    createCanvas(windowWidth, windowHeight);
+    let canvas = createCanvas(windowWidth, windowHeight);
+    canvas.position(0, 0); // Position at top-left
+    canvas.style('z-index', '-1'); // Push it to the background
+    canvas.style('position', 'fixed'); // Make it stay fixed
     background(50);
 }
 
