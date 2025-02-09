@@ -130,7 +130,7 @@ All readings should be completed before the class meeting as listed. Every class
  - Tuesday: **[Bluesky Bot Due](bot.md)**
    - Read: *Code to Joy* - Combining Code and Data
    - Read: *Artificial Intelligence* - Part I: Background
-   - Demo: Using Local AI for grammar development
+   - Demo: [Local AI, Grammars, and starting with Tracery for the web](tracery_web.md)
  - Thursday: Tracery and P5.js
    - Demo: Building with Tracery for the web
    - Read: *Output* - Haiku (all)
