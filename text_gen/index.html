@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alien Sightings Generator</title>
-    <script src="jquery-3.7.1.slim.min.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
     <script defer src="tracery.min.js"></script>
 
     <style>
@@ -46,7 +46,7 @@
                     var grammar = tracery.createGrammar(sighting);
                 
                     // Generate sighting report
-                    var sightingReport = grammar.flatten("#phrase#");
+                    var sightingReport = grammar.flatten("#origin#");
                 
                     // Update content
                     $("#sightings").empty().append(sightingReport);
