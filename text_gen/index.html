@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alien Sightings Generator</title>
+    <title>Alien Sightings Generator Demo</title>
     <script src="jquery-3.7.1.min.js"></script>
     <script defer src="tracery.min.js"></script>
 
@@ -22,7 +22,7 @@
         }
 
         #sightings {
-            background-color: rgba(0, 255, 0, 0.1);
+            background-color: rgba(0, 255, 0, 0.8);
             border: 2px solid #39ff14;
             padding: 20px;
             margin: 20px auto;
@@ -35,7 +35,8 @@
     </style>
 </head>
 <body>
-    <h1>Alien Sightings Generator</h1>
+    <h1 id="title">Alien Sightings Generator</h1>
+    <div id="illustration"></div>
     <p id="sightings"></p>
 </body>
 <script>
@@ -47,9 +48,10 @@
                 
                     // Generate sighting report
                     var sightingReport = grammar.flatten("#origin#");
-                
+                    var image = grammar.flatten("#svg#");
                     // Update content
                     $("#sightings").empty().append(sightingReport);
+                    $("#illustration").empty().append(image);
                  });
             }, 5000);
         });
