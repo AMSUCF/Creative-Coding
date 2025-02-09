@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proustian Letter Generator</title>
+    <title>Alien Sightings Generator</title>
+    <script src="jquery-3.7.1.slim.min.js"></script>
     <script defer src="tracery.min.js"></script>
+
     <style>
         body {
             font-family: serif;
@@ -29,37 +31,34 @@
     </style>
 </head>
 <body>
-    <h1>Proustian Letter Generator</h1>
-    <div class="letter" id="letter">Loading...</div>
-    <button id="generateBtn">Generate New Letter</button>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            if (typeof tracery === "undefined") {
-                console.error("Tracery is not loaded. Check tracery.min.js.");
-                return;
-            }
-    
-            function generateLetter() {
-                let grammar = {
-                    "origin": [
-                        "My dear friend,\n\nThe #abstract# of our last meeting lingers in my mind, much like the #objects# in a forgotten #places#. In that #places#, we encountered a #people#, who spoke of #abstract# and the ever-changing nature of #objects#.\n\nI find myself yearning for the #places#, where the #abstract# of existence unfolds as subtly as a #objects# upon the shore. Let us meet soon.\n\nYours in reverie,\nA."
-                    ],
-                    "people": ["violinist", "sculptor", "banker", "traveller", "novelist", "philosopher"],
-                    "places": ["mansion", "horizon", "countryside", "empire", "district", "meadow"],
-                    "objects": ["mirror", "pen", "garden", "clock", "book", "statue"],
-                    "abstract": ["memory", "longing", "destiny", "melancholy", "solitude", "passion"]
-                };
-    
-                let traceryGrammar = tracery.createGrammar(grammar);
-                let letterText = traceryGrammar.flatten("#origin#");
-                document.getElementById("letter").innerHTML = letterText.replace(/\n/g, '<br>');
-            }
-    
-            generateLetter();
-            document.getElementById("generateBtn").addEventListener("click", generateLetter);
-        });
-    </script>
-    
+    <h1>Alien Sightings Generator</h1>
+    <p id="sightings"></p>
 </body>
+<script>
+
+      var sighting = {
+        "origin": [
+            "Report: A #adjective# #alien_type# was sighted #location#. The entity is believed to be from #origin#. Witnesses describe it as #description#.",
+            "Breaking News: A #adjective# #alien_type# has been spotted #location#. Experts suggest it hails from #origin#. It was seen #activity#.",
+            "Unbelievable! A #adjective# #alien_type# has been encountered #location#. This being is said to originate from #origin# and was reportedly #activity#."
+        ],
+        "alien_type": ["humanoid being", "insectoid creature", "glowing entity", "reptilian figure", "shapeshifting form", "floating sphere"],
+        "adjective": ["mysterious", "glowing", "shadowy", "towering", "translucent", "unearthly"],
+        "location": ["near an abandoned barn", "in a dense forest", "by the riverbank", "on a remote highway", "at a small-town gas station", "inside a cornfield"],
+        "origin": ["the Andromeda galaxy", "a distant exoplanet", "a hidden dimension", "deep within our own moon", "an unknown region of space", "beneath the ocean"],
+        "description": ["emitting a strange humming sound", "communicating in an unknown language", "moving in impossible ways", "vanishing without a trace", "radiating an eerie light"],
+        "activity": ["studying the environment", "observing humans from a distance", "leaving behind cryptic symbols", "hovering silently", "teleporting away instantly"]
+        }
+        $(document).ready(function() {
+            setTimeout(function () {
+                var grammar = tracery.createGrammar(sighting);
+                
+                // Generate sighting report
+                var sightingReport = grammar.flatten("#origin#");
+                
+                // Update content
+                $("#sightings").empty().append(sightingReport);
+            }, 5000);
+        });
+</script>
 </html>
