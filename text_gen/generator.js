@@ -16,12 +16,12 @@ function setup() {
     canvas.position(0, 0); // Position at top-left
     canvas.style('z-index', '-1'); // Push it to the background
     canvas.style('position', 'fixed'); // Make it stay fixed
-    background(50);
+    background(0);
 }
 
 function draw() {
     // Fade effect to keep a ghostly trail
-    background(50, 50, 50, 50);
+    background(0, 0, 0, 50);
 
     // Update and display particles
     for (let i = particles.length - 1; i >= 0; i--) {
