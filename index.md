@@ -140,8 +140,10 @@ All readings should be completed before the class meeting as listed. Every class
  - Tuesday: **[Text Generator Due](text_generator.md)**
    - Read: *Code to Joy* - Programmable World
    - Read: *Artificial Intelligence* - Part II: Looking and Seeing
+   - Demo: GitHub Copilot and Code-specific tools
  - Thursday: P5.js Interactions
-   -  Read: *Output* - Visual Poetry (all)
+   - Demo: Games and Metagames
+   - Read: *Output* - Visual Poetry (all)
 
 **Week Eight: Creative Code - Vision - February 25th and 27th**
 
