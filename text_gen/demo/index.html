@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Tracery Sighting</title>
+  <style>
+    /* Simple Sci-fi Themed Styling */
+    body {
+      background-color: #000;
+      color: #0ff;
+      font-family: "Roboto", sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      background: radial-gradient(circle at center, #000 0%, #111 100%),
+                  url("data:image/svg+xml,%3Csvg width='1200' height='1200' viewBox='0 0 1200 1200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2300ffff' fill-opacity='0.05'%3E%3Ccircle cx='600' cy='600' r='600'/%3E%3Ccircle cx='600' cy='600' r='400'/%3E%3Ccircle cx='600' cy='600' r='200'/%3E%3C/g%3E%3C/svg%3E") no-repeat center;
+      background-size: cover;
+    }
+    h1 {
+      margin-top: 2rem;
+      font-size: 2rem;
+      color: #0ff;
+      text-shadow: 0 0 5px #0ff;
+    }
+    #output {
+      margin-top: 2rem;
+      width: 80%;
+      background: rgba(0, 255, 255, 0.1);
+      border: 1px solid #0ff;
+      border-radius: 10px;
+      padding: 1rem;
+      font-size: 1.2rem;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,255,255,0.5);
+    }
+  </style>
+  <!-- Load local jQuery and Tracery -->
+  <script src="jquery-3.7.1.min.js"></script>
+  <script src="tracery.min.js"></script>
+</head>
+<body>
+
+  <h1>Tracery Output</h1>
+  <div id="output"></div>
+  
+  <script>
+    $(document).ready(function() {
+      // Fetch the external JSON grammar
+      $.getJSON("sighting.json", function(grammarData) {
+        // Create a Tracery grammar
+        let grammar = tracery.createGrammar(grammarData);
+        
+        function generateText() {
+          // Flatten once using the origin rule
+          let sighting = grammar.flatten("#origin#");
+          // Display the result
+          $("#output").text(sighting);
+        }
+
+        // Call generateText immediately
+        generateText();
+        // Call generateText every 2 seconds
+        setInterval(generateText, 2000);
+      });
+    });
+  </script>
+</body>
+</html>
