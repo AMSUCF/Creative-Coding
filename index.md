@@ -141,13 +141,13 @@ All readings should be completed before the class meeting as listed. Every class
    - Read: *Code to Joy* - Programmable World
    - Read: *Artificial Intelligence* - Part II: Looking and Seeing
    - Demo: GitHub Copilot and Code-specific tools
- - Thursday: P5.js Interactions
-   - Demo: Games and Metagames
+ - Thursday: [P5.js Interactions](p5_game.md)
+   - Demo: [Games and Metagames](https://anastasiasalter.net/AIAdmin/)
    - Read: *Output* - Visual Poetry (all)
 
 **Week Eight: Creative Code - Vision - February 25th and 27th**
 
- - Tuesday: **P5.js Game Due**
+ - Tuesday: **[P5.js Game Due](p5_game.md)**
    - Read: *Artificial Intelligence* - Part III: Learning to Play
  - Thursday: ml5.js and Teachable Machine
    - Read: *Output* - Text and Image (all)
