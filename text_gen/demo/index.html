@@ -57,8 +57,8 @@
         function generateText() {
           // Flatten once using the origin rule
           let sighting = grammar.flatten("#origin#");
-          // Display the result
-          $("#output").text(sighting);
+          // Display the result as HTML
+          $("#output").html(sighting);
         }
 
         // Call generateText immediately
