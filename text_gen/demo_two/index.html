@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Tracery Dance</title>
+  <style>
+    body { margin: 0; }
+  </style>
+</head>
+<body>
+  <!-- p5.js will handle the canvas creation -->
+  
+  <!-- Load local libraries -->
+  <script src="jquery-3.7.1.min.js"></script>
+  <script src="p5.min.js"></script>
+  <script defer src="tracery.min.js"></script>
+  
+  <script>
+    let particles = []; // new global array for particles
+    let grammar;
+    let spaceshipY;
+    let spaceshipX;
+    let spaceshipColor;
+
+    function setup() {
+        spaceshipY = height;
+        spaceshipX = random(width); // Randomize the X position
+        spaceshipColor = getRandomColor(); // Assign a random color
+        
+        createCanvas(windowWidth, windowHeight);
+      textSize(24);
+      fill(255);
+      textAlign(CENTER, CENTER);
+
+      // Load the external JSON grammar file using jQuery
+      $.getJSON('grammar.json', function(grammarData) {
+        grammar = tracery.createGrammar(grammarData);
+        updateText(); // Generate initial particle immediately
+        // Then update every 1.5 seconds
+        setInterval(updateText, 1500);
+      });
+    }
+
+    function updateText() {
+      if (grammar) {
+        let particle = {
+          text: grammar.flatten("#origin#"),
+          x: random(width),
+          y: 0,
+          speed: random(1, 5) // new random falling speed
+        };
+        particles.push(particle);
+      }
+    }
+
+    function draw() {
+      background(10); // Space background
+      // Display and update all particles
+      for (let i = 0; i < particles.length; i++) {
+        let p = particles[i];
+        // Update the particle's y position until it reaches the bottom
+        if (p.y < height) {
+          p.y += p.speed;
+          if(p.y > height) p.y = height;
+        }
+        text(p.text, p.x, p.y);
+      }
+      
+
+        drawSpaceship(spaceshipX, spaceshipY, spaceshipColor);
+
+        // Move spaceship upwards
+        spaceshipY -= 2;
+
+        // Reset position when it leaves the top
+        if (spaceshipY < -30) {
+        spaceshipY = height + 30;
+        spaceshipX = random(width); // Randomize X position
+        spaceshipColor = getRandomColor(); // Change color
+        }
+}
+function drawSpaceship(x, y, color) {
+  push();
+  translate(x, y);
+  noStroke();
+
+  // Thruster flames
+  fill(255, 100, 0, 180);
+  triangle(-10, 30, 10, 30, 0, 50);
+  fill(255, 200, 0, 180);
+  triangle(-7, 30, 7, 30, 0, 40);
+
+  // Wings
+  fill(color);
+  triangle(-30, 10, -5, -10, -10, 20);
+  triangle(30, 10, 5, -10, 10, 20);
+
+  // Spaceship body
+  fill(color);
+  ellipse(0, 0, 40, 60);
+
+  // Cockpit
+  fill(200, 255, 255);
+  ellipse(0, -15, 20, 25);
+
+  pop();
+}
+
+// Function to generate a random spaceship color
+function getRandomColor() {
+  return color(random(100, 255), random(100, 255), random(100, 255));
+}
+    function windowResized() {
+      resizeCanvas(windowWidth, windowHeight);
+    }
+  </script>
+</body>
+</html>
