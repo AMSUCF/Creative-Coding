@@ -2,6 +2,13 @@
 
 For this exercise, we'll work from the same .json file and tracery library as before, but we'll incorporate p5.js.
 
+To get familiar with P5, we'll start by working through the code of some demos of text animation:
+
+- [Click Poetry](https://openprocessing.org/sketch/1325975) builds on basic mouse interaction: click to place a line of text. The work will cycle through a text in order.
+- [Falling Text](https://openprocessing.org/sketch/1325914) uses a simple particle system to create moving text.
+- [Moving Click Text](https://openprocessing.org/sketch/1325979) combines elements of the other two examples to create moving text where the user clicks. 
+- [Adding Tracery](https://openprocessing.org/sketch/2543597) combines all the pieces to show an example with P5.js and Tracery working together.
+
 - Download [p5.js](https://p5js.org/download/) into the same folder as the rest of your project.
 - Set up the new html file to include Tracery, jQuery, and p5.js
 - P5.js is a library for animation and interaction that relies on two basic functions, setup and draw: we'll use those to build a basic particle system. Refer to Allison Parrish's [creative coding with P5](https://creative-coding.decontextualize.com/first-steps/) tutorials for guidance on experimenting with this library in combination with generative code.
