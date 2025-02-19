@@ -152,7 +152,7 @@ All readings should be completed before the class meeting as listed. Every class
    - Demo: [Teachable Machine](tm_demo.md)
    - Demo: [GitHub Copilot Workspace](https://githubnext.com/projects/copilot-workspace)
    - Read: *Artificial Intelligence* - Part III: Learning to Play
- - Thursday: [ml5.js and Teachable Machine](ml5.js)
+ - Thursday: [ml5.js and Teachable Machine](ml5.md)
    - Demo: [Rock, Paper, Scissors](ml5/index.html)
    - Read: *Output* - Text and Image (all)
 
