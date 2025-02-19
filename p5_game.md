@@ -4,7 +4,7 @@ Using a familiar genre as a starting point, build out a complete, one room / one
 
 ### Building for Interaction
 
-Here's an overview of the steps / prompts involved - however, you'll need to adjust these to your genre and mechanics. Iterate and debug using Copilot's edit feature to handle multiple files.
+Here's an overview of the steps / prompts involved - however, you'll need to adjust these to your goals. Decide when to program directly, and when using generative AI tools to build or debug will be most useful.
 
 #### 1. Set Up the Canvas
 1. Build a single-page HTML game, using the P5.js library online
@@ -12,7 +12,7 @@ Here's an overview of the steps / prompts involved - however, you'll need to adj
 3. Make sure the canvas is centered on the HTML page 
 
 #### 2. Load a Background Image
-1. Generate a background image for your room (e.g., a room with a desk, computer, phone, and book) and save it in your repository folder
+1. Generate or draw a background image for your room (e.g., a room with a desk, computer, phone, and book) and save it in your repository folder
 2. Use `loadImage()` in p5.js to load that image - make sure to use the right file name.
 3. Display this image on the canvas inside the `draw()` function.
 
@@ -41,4 +41,4 @@ Here's an overview of the steps / prompts involved - however, you'll need to adj
 2. When the player interacts with all objects, display an ending screen.
 3. Consider adjusting the ending based on player decisions.
 
-Submit the link to your live, GitHub Pages version of the game on the Moodle.
+Submit the link to your live, GitHub Pages or Open Processing version of the game on the Moodle.

@@ -142,7 +142,7 @@ All readings should be completed before the class meeting as listed. Every class
    - Read: *Code to Joy* - Programmable World
    - Read: *Artificial Intelligence* - Part II: Looking and Seeing
    - Demo: GitHub Copilot and Code-specific tools
- - Thursday: [P5.js Interactions](p5_game.md)
+ - Thursday: [p5.js Interactions](p5_game.md)
    - Demo: [Games and Metagames](https://anastasiasalter.net/AIAdmin/)
    - Read: *Output* - Visual Poetry (all)
 
@@ -150,15 +150,19 @@ All readings should be completed before the class meeting as listed. Every class
 
  - Tuesday: **[P5.js Game Due](p5_game.md)**
    - Demo: [Teachable Machine](tm_demo.md)
+   - Demo: [GitHub Copilot Workspace](https://githubnext.com/projects/copilot-workspace)
    - Read: *Artificial Intelligence* - Part III: Learning to Play
- - Thursday: ml5.js and Teachable Machine
+ - Thursday: [ml5.js and Teachable Machine](ml5.js)
+   - Demo: [Rock, Paper, Scissors](ml5/index.html)
    - Read: *Output* - Text and Image (all)
 
 **Week Nine: Creative Code - Interfaces - March 4th and 6th**
 
- - Tuesday: **ML5.js Piece Due**
+ - Tuesday: **[ml5.js Piece Due](ml5.md)**
+   - Demo: [Fine Tuning](fine_tune.md)
    - Read: *Artificial Intelligence* - Part IV: Artificial Intelligence Meets Natural Language
- - Thursday: Combining libraries
+ - Thursday: Combining Expertise
+   - Demo: [Continue](https://docs.continue.dev/getting-started/overview)
    - Read: *Output* - Humor (all)
 
 **Week Ten: Play and Critique - March 11th**

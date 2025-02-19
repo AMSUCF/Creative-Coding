@@ -6,4 +6,4 @@ Next, launch [Teachable Machine](https://teachablemachine.withgoogle.com/train),
 
 Upload the images from each category, labeling them as you go (as shown above). Then, train the model and export it by selecting the options Tensorflow.js and Upload (shareable link). Copy the resulting link.
 
-Next, we’re going to set up a tool that will let you test your model against other images that fall in the same categories. This tool is one I built that is going to give you a simple framework - you only need to replace one line of code to make it work. Load the sample application, select </>, and replace the URL in line 4 with your URL to test your model.
+Next, we’re going to set up a tool that will let you test your model against other images that fall in the same categories. This tool is one I built that is going to give you a simple framework - you only need to replace one line of code to make it work. Load the [sample application](https://openprocessing.org/sketch/2382215), select </>, and replace the URL in line 4 with your URL to test your model.

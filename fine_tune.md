@@ -1,0 +1,13 @@
+## Demo: Fine-Tuning a Model
+
+As we reach the end of the semester, we're going to start thinking about how we might take more control of generative AI tools in the future. In this demo, I'll revisit our text generation process and use it to fine-tune a chatbot.
+
+- **Select and Download Texts from Project Gutenberg** - I suggest picking a single author for this, ideally someone with a lot of interesting dialogue. If you run into problems with the training process below, you might have tried to pull too many novels - go back and experiment and cut down to a single novel if needed.
+- **Process the Text Files to Extract Dialogues** - Remember, not all novels use "" to indicate dialogue. Take a look at how conversation is marked in the novels you've selected, and iterate through the extraction process until you get the material you are looking for.
+- **Prepare the Dataset for Training** - Dialogue has to be processed into input-output pairs to be usable by the bot: the Python code will try to pair sequential dialogue appropriately. Save the dataset as a JSON file to check over it before you train, and make sure it looks like you have something usable.
+- **Choose and Set Up a GPT Model in TensorFlow** - For this, we'll be using an open source model (so that we don't have to pay even more to fine-tune a model). This means the results won't be as impressive as if you were fine tuning the most recent model. GPT2 or similar works well enough to see this is in action.
+- **Fine-Tune the Model** - Expect the most errors and frustration at this stage - remember, fine-tuning is basically running a loop across all the data you've gathered over and over again and putting it into context with the model you've selected. If you find it takes too long or crashes the RAM on Colab, ask to simplify the training (fewer epochs, etc.)
+- **Test the Chatbot in Google Colab** - For this exercise, we're not going to deploy our model externally: that would require hosting it, like OpenAI does with ChatGPT. Instead, you can run the Chatbot through test prompts directly in Python on Colab or locally. Expect to hit lots of limitations given the constraints of this minimal training, but hopefully you'll also get some emergent, playful results.
+
+When complete, your sample output will look something like this one from my AustenBot - you can try it for itself [using the Colab notebook](https://colab.research.google.com/drive/1QmCgdlzBdwmHtm964zUiS3UiotVyxK7l?usp=sharing). This bot is still fairly limited (we gave it a small dataset using GPT2, an older model) - however, it offers some insights into how you might build on a creative dataset towards an interactive experience. 
+
