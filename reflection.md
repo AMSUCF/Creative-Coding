@@ -1,0 +1,9 @@
+## Final Reflection
+
+Throughout this semester, we've explored the impact of generative AI on our approach to code and programming, with particular attention to the role of human imagination in shaping the landscape of creative code today. Several of the usages we've encountered are still in early stages, and there's both significant speculation and hype around the futures these tools portend. This final reflection is an opportunity to think about that future work: in a short (750 - 1000 words) essay, contextualize the work you've produced and critiqued the semester. Your reflection should be guided by the following questions, which ask you to connect your past, present, and future work to generative AI as a potential tool in programming:
+
+- **What past perceptions did this course challenge - or confirm?** Does generative AI work for programming the way you expected? Have your expectations of these tools (or of how you see yourself working with them) changed from where you started? *Cite at least **three** sources from the course to support your response.* (5 points)
+- **What present work are you most excited about?** Did you start anything you want to continue? Did any particular exercise resonate with your goals, or raise questions or concerns that you want to address further? This might include the creative code tools we used, or generative AI methods and tools themselves. *Mention specific projects, libraries, and tools from class in your response.* (5 points)
+- **What will you take with you to your future work?** How, if at all, do you imagine engaging generative AI in your own future programming work? What most excites or concerns you about the future based on our work together this semester? (5 points)
+
+Upload your final reflection document, including a works cited, to the Moodle by no later than **5PM on March 17th.** There are no extensions possible on the final assignment!
