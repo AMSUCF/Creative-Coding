@@ -149,6 +149,7 @@ All readings should be completed before the class meeting as listed. Every class
 **Week Eight: Creative Code - Vision - February 25th and 27th**
 
  - Tuesday: **[P5.js Game Due](p5_game.md)**
+   - Demo: [Teachable Machine](tm_demo.md)
    - Read: *Artificial Intelligence* - Part III: Learning to Play
  - Thursday: ml5.js and Teachable Machine
    - Read: *Output* - Text and Image (all)
