@@ -167,7 +167,7 @@ All readings should be completed before the class meeting as listed. Every class
 
 **Week Ten: Play and Critique - March 11th**
 
- - Tuesday: **Portfolio Due**
+ - Tuesday: **[Portfolio Due](portfolio.md)**
    - Read: *Artificial Intelligence* - Part V: The Barrier of Meaning
 
 **[Take-Home Final Exam: Reflective Writing - Due Monday, March 17th at 5PM!](reflection.md)**
