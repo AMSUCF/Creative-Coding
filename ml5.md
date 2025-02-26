@@ -10,6 +10,6 @@ In class, we'll work through these examples and learn from their approaches:
 - [Falling Coins](https://editor.p5js.org/pattvira/sketches/DCTLTHUyU)
 - [Interactive Fridge Magnets](https://editor.p5js.org/pattvira/sketches/f3nZuIPZi)
 
-I recommend the [ml5.js Coding Train Videos])(https://youtu.be/2h8VArJ3gnQ?si=A4eMADxQ529uiY0x) for additional references on the current capabilities of the library.
+I recommend the [ml5.js Coding Train Videos](https://youtu.be/2h8VArJ3gnQ?si=A4eMADxQ529uiY0x) for additional references on the current capabilities of the library.
 
 Submit either an OpenProcessing / P5.js link or a GitHub Pages deployment of your experiment.
