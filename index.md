@@ -159,10 +159,12 @@ All readings should be completed before the class meeting as listed. Every class
 **Week Nine: Creative Code - Interfaces - March 4th and 6th**
 
  - Tuesday: **[ml5.js Piece Due](ml5.md)**
-   - Demo: [Fine Tuning](fine_tune.md)
+   - Demo: ml5 combinatorials
+   - Demo: [Continue](https://docs.continue.dev/getting-started/overview)
    - Read: *Artificial Intelligence* - Part IV: Artificial Intelligence Meets Natural Language
  - Thursday: Combining Expertise
-   - Demo: [Continue](https://docs.continue.dev/getting-started/overview)
+   - Demo: From Open Processing to GitHub Pages
+   - Demo: [Fine Tuning](fine_tune.md)
    - Read: *Output* - Humor (all)
 
 **Week Ten: Play and Critique - March 11th**
