@@ -164,7 +164,7 @@ All readings should be completed before the class meeting as listed. Every class
    - Read: *Artificial Intelligence* - Part IV: Artificial Intelligence Meets Natural Language
  - Thursday: Combining Expertise
    - Demo: From Open Processing to GitHub Pages
-   - Demo: [Fine Tuning](fine_tune.md)
+   - Demo: [Copilot Agent](https://github.blog/news-insights/product-news/github-copilot-the-agent-awakens/)
    - Read: *Output* - Humor (all)
 
 **Week Ten: Play and Critique - March 11th**
